@@ -5,10 +5,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bytes = "1.4"
-hex = "0.4"
+bytes = "1.5.0"
+hex = "0.4.3"
 revm = { path = "../../crates/revm", version = "3.3.0",default-features=false }
-microbench = "0.5"
+microbench = "0.5.0"
 
 [[bin]]
 name = "analysis"

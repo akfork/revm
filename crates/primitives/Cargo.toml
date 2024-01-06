@@ -20,25 +20,25 @@ rustdoc-args = ["--cfg", "docsrs"]
 alloy-primitives = { version = "0.6", default-features = false, features = [
     "rlp",
 ] }
-alloy-rlp = { version = "0.3", default-features = false, features = ["derive"] }
-hashbrown = "0.14"
-auto_impl = "1.1"
-bitvec = { version = "1", default-features = false, features = ["alloc"] }
+alloy-rlp = { version = "0.3.4", default-features = false, features = ["derive"] }
+hashbrown = "0.14.3"
+auto_impl = "1.1.0"
+bitvec = { version = "1.0.1", default-features = false, features = ["alloc"] }
 bitflags = { version = "2.4.1", default-features = false }
 
 # For setting the CfgEnv KZGSettings. Enabled by c-kzg flag.
 c-kzg = { version = "0.4.0", default-features = false, optional = true }
-once_cell = { version = "1.19", default-features = false, optional = true }
+once_cell = { version = "1.19.0", default-features = false, optional = true }
 
 # utility
-enumn = "0.1"
-derive_more = { version = "0.99", optional = true }
+enumn = "0.1.13"
+derive_more = { version = "0.99.17", optional = true }
 
 # optional
-serde = { version = "1.0", features = ["derive", "rc"], optional = true }
+serde = { version = "1.0.195", features = ["derive", "rc"], optional = true }
 
 [build-dependencies]
-hex = "0.4"
+hex = "0.4.3"
 
 [features]
 default = ["std", "c-kzg"]

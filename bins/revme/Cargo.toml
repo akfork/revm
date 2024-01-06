@@ -10,22 +10,22 @@ version = "0.2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-hash-db = "0.15"
-hashbrown = "0.14"
-indicatif = "0.17"
-plain_hasher = "0.2"
+hash-db = "0.15.2"
+hashbrown = "0.14.3"
+indicatif = "0.17.7"
+plain_hasher = "0.2.3"
 revm = { path = "../../crates/revm", version = "3.5.0", default-features = false, features = [
     "ethersdb",
     "std",
     "serde",
     "c-kzg",
 ] }
-alloy-rlp = { version = "0.3", default-features = false, features = [
+alloy-rlp = { version = "0.3.4", default-features = false, features = [
     "arrayvec",
 ] }
-serde = { version = "1.0", features = ["derive", "rc"] }
-serde_json = { version = "1.0", features = ["preserve_order"] }
-structopt = "0.3"
-thiserror = "1.0"
-triehash = "0.8"
-walkdir = "2.4"
+serde = { version = "1.0.195", features = ["derive", "rc"] }
+serde_json = { version = "1.0.111", features = ["preserve_order"] }
+structopt = "0.3.26"
+thiserror = "1.0.56"
+triehash = "0.8.4"
+walkdir = "2.4.0"
