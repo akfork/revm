@@ -17,7 +17,7 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
-alloy-primitives = { version = "0.6", default-features = false, features = [
+alloy-primitives = { git = "https://github.com/akfork/core.git", rev = "68706ddba1d75074af5dcfaeb7de5694b055a302", default-features = false, features = [
     "rlp",
 ] }
 alloy-rlp = { version = "0.3.4", default-features = false, features = ["derive"] }
